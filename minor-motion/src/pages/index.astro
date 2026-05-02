@@ -17,64 +17,75 @@ import "../styles/desktop.css";
   </head>
 
   <body>
+    <!-- navbar component -->
     <Navbar />
 
     <div class="nav-spacer"></div>
 
     <div class="hero">
-    <section class="carousel-container">
-      <button class="carousel-btn prev">
-        <img src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="prev">
-      </button>
+      <!-- carousel -->
+      <section class="carousel-container">
+        <!-- left btn -->
+        <button class="carousel-btn prev">
+          <img src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="prev">
+        </button>
 
-      <div class="carousel-track">
-        <div class="slide">
-          <img src="/images/slide/01.jpg" alt="slide">
-        </div>
-        <div class="slide">
-          <img src="/images/slide/02.jpg" alt="slide">
-        </div>
-        <div class="slide">
-          <img src="/images/slide/03.jpg" alt="slide">
-        </div>
-        <div class="slide">
-          <img src="/images/slide/04.jpg" alt="slide">
-        </div>
-        <div class="slide">
-          <img src="/images/slide/05.jpg" alt="slide">
-        </div>
-      </div>
-
-      <button class="carousel-btn next">
-        <img src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="prev">
-      </button>
-    </section>
-
-    <section class="actualidad">
-      <h2 class="actualidad-title">Novedades</h2>
-
-      <div class="actualidad-list">
-        <div class="card">
-          <div class="card-content">
-            <h3>EPIS entre las mejores</h3>
-            <p>La Escuela Profesional de Ingeniería de Sistemas se posiciona como una de las mejores en la UNDC.</p>
+        <div class="carousel-track">
+          <!-- image 1 -->
+          <div class="slide">
+            <img src="/images/slide/01.jpg" alt="slide">
           </div>
-          <img src="/images/news/01.jpg" alt="noticia">
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h3>3era Feria Tecnológica</h3>
-            <p>Nuestros alumnos exponen sus proyectos al público cañetano en la 3era Feria Tecnológica en la provincia.</p>
+          <!-- image 2-->
+          <div class="slide">
+            <img src="/images/slide/02.jpg" alt="slide">
           </div>
-          <img src="/images/news/02.jpg" alt="noticia">
+          <!-- image 3 -->
+          <div class="slide">
+            <img src="/images/slide/03.jpg" alt="slide">
+          </div>
+          <!-- image 4 -->
+          <div class="slide">
+            <img src="/images/slide/04.jpg" alt="slide">
+          </div>
+          <!-- image 5 -->
+          <div class="slide">
+            <img src="/images/slide/05.jpg" alt="slide">
+          </div>
         </div>
-      </div>
+        
+        <!-- right btn -->
+        <button class="carousel-btn next">
+          <img src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="prev">
+        </button>
+      </section>
 
-      <button class="actualidad-btn">Más noticias</button>
-    </section>
+      <!-- news section -->
+      <section class="actualidad">
+        <h2 class="actualidad-title">Novedades</h2>
+
+        <div class="actualidad-list">
+          <div class="card">
+            <div class="card-content">
+              <h3>EPIS entre las mejores</h3>
+              <p>La Escuela Profesional de Ingeniería de Sistemas se posiciona como una de las mejores en la UNDC.</p>
+            </div>
+            <img src="/images/news/01.jpg" alt="noticia">
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3>3era Feria Tecnológica</h3>
+              <p>Nuestros alumnos exponen sus proyectos al público cañetano en la 3era Feria Tecnológica en la provincia.</p>
+            </div>
+            <img src="/images/news/02.jpg" alt="noticia">
+          </div>
+        </div>
+
+        <button class="actualidad-btn">Más noticias</button>
+      </section>
     </div>
 
+    <!-- message section -->
     <section class="mensaje">
       <div class="mensaje-container">
         <img src="/images/message/01.jpg" alt="mensaje">
@@ -86,6 +97,7 @@ import "../styles/desktop.css";
       </div>
     </section>
 
+    <!-- portals section -->
     <section class="portales">
       <h2 class="portales-title">Portales</h2>
 
@@ -122,6 +134,7 @@ import "../styles/desktop.css";
       </div>
     </section>
 
+    <!-- footer -->
     <section class="footer">
 
       <div class="footer-info">

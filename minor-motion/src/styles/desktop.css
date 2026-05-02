@@ -7,10 +7,10 @@
         display: flex;
         width: 100%;
         height: 500px;
-        max-width: 1380px; /* 🔥 controla ancho */
-        margin: 30px auto;     /* 🔥 centra */
-        padding: 0 20px;    /* pequeño respiro */
-        gap: 20px;          /* separación entre columnas */
+        max-width: 1380px;
+        margin: 30px auto;
+        padding: 0 20px;
+        gap: 20px;
     }
 
     .carousel-container {
@@ -32,7 +32,7 @@
     .actualidad {
         width: 50%;
         height: 100%;
-        overflow-y: none; /* 🔥 scroll si hay mucho contenido */
+        overflow-y: none;
     }
 
     .actualidad-title {
@@ -44,7 +44,7 @@
     }
 
      .card {
-        height: 200px; /* 🔥 más alta */
+        height: 200px;
         padding: 15px;
         border-radius: 16px;
     }
@@ -60,7 +60,7 @@
     }
 
     .card img {
-        width: 180px;   /* 🔥 más grande */
+        width: 180px;
         height: 100%;
         border-radius: 12px;
     }
@@ -74,15 +74,15 @@
 
     .mensaje {
         max-width: 1380px;
-        margin: 30px auto;   /* centra */
-        padding: 0 20px;     /* aire lateral */
+        margin: 30px auto;
+        padding: 0 20px;
     }
 
     .mensaje-container {
         padding: 30px 30px 30px 30px;
         display: flex;
         flex-direction: row-reverse;
-        height: 450px;       /* opcional: más grande en desktop */
+        height: 450px;
         border-radius: 12px;
         overflow: hidden;
         background: rgb(3, 10, 73);
@@ -90,7 +90,7 @@
     }
 
     .mensaje-overlay {
-        position: static;       /* 🔥 quitamos overlay */
+        position: static;
         width: 50%;
         height: 100%;
         background: rgb(3, 10, 73);
@@ -101,7 +101,6 @@
         padding-right: 70px;
     }
 
-    /* IMAGEN (DERECHA) */
     .mensaje-container img {
         width: 48.2%;
         height: 100%;
@@ -165,7 +164,6 @@
         padding: 40px auto 20px auto;
     }
 
-    /* INFO EN FILA MÁS LIMPIA */
     .footer-info {
         width: 100%;
         max-width: 900px;
@@ -191,7 +189,6 @@
         font-size: 0.8rem;
     }
 
-    /* LOGOS ABAJO CENTRADOS */
     .footer-copyright {
         display: flex;
         flex-direction: column;
@@ -212,7 +209,6 @@
         width: 50px;
     }
 
-    /* COPYRIGHT MÁS PEQUEÑO */
     .footer-copyright p {
         font-size: 0.8rem;
         opacity: 0.8;

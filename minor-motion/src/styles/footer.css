@@ -15,7 +15,6 @@
   text-align: center;
 }
 
-/* CONTENEDOR DE HORARIOS + CONTACTO */
 .footer-info {
   display: flex;
   justify-content: space-between;
@@ -23,13 +22,11 @@
   padding-bottom: 15px;
 }
 
-/* cada bloque ocupa espacio igual */
 .footer-horarios,
 .footer-contacto {
   flex: 1;
 }
 
-/* LOGOS */
 .footer-logos {
   display: flex;
   justify-content: center;
@@ -41,18 +38,15 @@
   width: 40px;
 }
 
-/* TITULOS */
 .footer h4 {
   margin-bottom: 10px;
 }
 
-/* TEXTOS */
 .footer p {
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-/* COPYRIGHT */
 .footer-copyright {
   margin-top: 10px;
   border-top: 1px solid rgba(255,255,255,0.2);
