@@ -1,0 +1,151 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgb(3, 10, 73);
+  height: 80px;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT SIEMPRE VISIBLE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+/* CENTRO (MENÚ) */
+.menu {
+  display: none; /* cerrado por defecto */
+  position: absolute;
+  top: 80px; /* debajo del nav */
+  left: 0;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 1001;
+}
+
+/* LISTA EN VERTICAL */
+.nav-center {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.nav-center li a {
+  color: rgb(3, 10, 73);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HAMBURGER VISIBLE */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+  color: white;
+}
+
+/* ===== ESTADO ABIERTO ===== */
+.menu.active {
+  display: block;
+}
+
+/* ESCRITORIO VERSION */
+
+@media (min-width: 768px) {
+
+  /* NAV sigue full width */
+  nav {
+    position: fixed;
+    width: 100%;
+    background: rgb(3, 10, 73);
+    height: 80px;
+    z-index: 1000;
+  }
+
+  /* 🔥 CONTENEDOR CENTRADO */
+  .nav-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+
+  /* HAMBURGER OFF */
+  .hamburger {
+    display: none;
+  }
+
+  /* MENU */
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* LISTA */
+  .nav-center {
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* LINKS */
+  .nav-center li a {
+    color: white;
+  }
+
+  /* BOTÓN FINAL */
+  .nav-center li:last-child a {
+    background: white;
+    color: rgb(3, 10, 73);
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-left img:first-child,
+  .nav-left span {
+    display: none;
+  }
+}

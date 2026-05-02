@@ -1,0 +1,159 @@
+---
+import Navbar from "../components/navbar.astro";
+import "../styles/carousel.css";
+import "../styles/actualidad.css";
+import "../styles/mensaje.css";
+import "../styles/portales.css";
+import "../styles/footer.css";
+import "../styles/desktop.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FI - UNDC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body>
+    <Navbar />
+
+    <div class="nav-spacer"></div>
+
+    <div class="hero">
+    <section class="carousel-container">
+      <button class="carousel-btn prev">
+        <img src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="prev">
+      </button>
+
+      <div class="carousel-track">
+        <div class="slide">
+          <img src="/images/slide/01.jpg" alt="slide">
+        </div>
+        <div class="slide">
+          <img src="/images/slide/02.jpg" alt="slide">
+        </div>
+        <div class="slide">
+          <img src="/images/slide/03.jpg" alt="slide">
+        </div>
+        <div class="slide">
+          <img src="/images/slide/04.jpg" alt="slide">
+        </div>
+        <div class="slide">
+          <img src="/images/slide/05.jpg" alt="slide">
+        </div>
+      </div>
+
+      <button class="carousel-btn next">
+        <img src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="prev">
+      </button>
+    </section>
+
+    <section class="actualidad">
+      <h2 class="actualidad-title">Novedades</h2>
+
+      <div class="actualidad-list">
+        <div class="card">
+          <div class="card-content">
+            <h3>EPIS entre las mejores</h3>
+            <p>La Escuela Profesional de Ingeniería de Sistemas se posiciona como una de las mejores en la UNDC.</p>
+          </div>
+          <img src="/images/news/01.jpg" alt="noticia">
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h3>3era Feria Tecnológica</h3>
+            <p>Nuestros alumnos exponen sus proyectos al público cañetano en la 3era Feria Tecnológica en la provincia.</p>
+          </div>
+          <img src="/images/news/02.jpg" alt="noticia">
+        </div>
+      </div>
+
+      <button class="actualidad-btn">Más noticias</button>
+    </section>
+    </div>
+
+    <section class="mensaje">
+      <div class="mensaje-container">
+        <img src="/images/message/01.jpg" alt="mensaje">
+        <div class="mensaje-overlay">
+          <h3 class="mensaje-title">A nuestros estudiantes</h3>
+          <p class="mensaje-text mobile-text">Formamos líderes en ingeniería, impulsando innovación, desarrollo y un futuro tecnológico, sostenible y próspero en la UNDC.</p>
+          <p class="mensaje-text desktop-text">En la Facultad de Ingeniería de la UNDC, transformamos ideas en innovación, desafíos en oportunidades y conocimiento en progreso. Impulsamos el desarrollo de futuros líderes en ingeniería, forjando un camino hacia un mundo más tecnológico, sostenible y próspero. ¡Únete a nosotros y sé parte del cambio que impulsa el mañana desde hoy en la UNDC!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portales">
+      <h2 class="portales-title">Portales</h2>
+
+      <div class="portales-list">
+        <div class="portales-card">
+          <i class="fa-solid fa-user"></i>
+          <span>Sivireno</span>
+        </div>
+
+        <div class="portales-card">
+          <i class="fa-solid fa-laptop"></i>
+          <span>Aula Virtual</span>
+        </div>
+
+        <div class="portales-card">
+          <i class="fa-solid fa-book"></i>
+          <span>Biblioteca</span>
+        </div>
+
+        <div class="portales-card">
+          <i class="fa-solid fa-database"></i>
+          <span>Repositorio</span>
+        </div>
+
+        <div class="portales-card">
+          <i class="fa-solid fa-file"></i>
+          <span>Trámites</span>
+        </div>
+
+        <div class="portales-card">
+          <i class="fa-solid fa-gear"></i>
+          <span>GEDIPI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+
+      <div class="footer-info">
+        <div class="footer-horarios">
+          <h4>Horarios</h4>
+          <p>Lunes - Viernes</p>
+          <p>08:00 am - 13:00 pm</p>
+          <p>14:00 pm - 17:00 pm</p>
+        </div>
+
+        <div class="footer-contacto">
+          <h4>Contacto</h4>
+          <p>+51 949 026 908</p>
+          <p>San Vicente de Cañete<br>
+            Mariscal Benavides 322</p>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="footer-container">
+          <div class="footer-logos">
+            <img src="https://fi.undc.edu.pe/assets/es-undc-w6vZsxOV.png" alt="Logo UNDC" width="45">
+            <img src="https://fi.undc.edu.pe/assets/logo-fi-CvkxA2ej.png" alt="Logo FI" width="45">
+          </div>
+
+          <p>© 2026 Facultad de Ingeniería - UNDC</p>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="/src/scripts/carousel.js" defer></script>
+
+  </body>
+</html>

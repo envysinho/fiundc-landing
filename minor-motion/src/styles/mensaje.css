@@ -1,0 +1,61 @@
+.mensaje {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+/* CONTENEDOR */
+.mensaje-container {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative; /* 🔥 CLAVE para overlay */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* IMAGEN */
+.mensaje-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY (texto encima) */
+.mensaje-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 20px;
+  color: white;
+
+  background: linear-gradient(
+    to top,
+    rgba(3, 10, 73, 0.95) 0%,
+    rgba(3, 10, 73, 0.6) 70%,
+    rgba(3, 10, 73, 0) 100%
+  );
+}
+
+/* TÍTULO */
+.mensaje-title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* TEXTO */
+.mensaje-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.desktop-text {
+  display: none;
+}

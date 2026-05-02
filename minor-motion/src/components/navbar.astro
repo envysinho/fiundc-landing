@@ -1,0 +1,48 @@
+---
+import "../styles/navbar.css"
+---
+<nav>
+
+    <div class="nav-container">
+        <!-- left -->
+        <div class="nav-left">
+            <img src="https://fi.undc.edu.pe/assets/es-undc-w6vZsxOV.png" alt="Logo UNDC" width="45">
+            <img src="https://fi.undc.edu.pe/assets/logo-fi-CvkxA2ej.png" alt="Logo FI" width="45">
+            <span>FI - UNDC</span>
+        </div>
+
+        <!-- center -->
+        <div class="menu">
+          <ul class="nav-center">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Investigación</a></li>
+            <li><a href="#">Escuelas</a></li>
+            <li><a href="#">Posgrado</a></li>
+            <li><a href="#">Actividades</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        </div>
+
+        <div class="hamburger">&#9776;</div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        if (hamburger && menu) {
+            hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+        document.addEventListener("click", (e) => {
+            const target = e.target as Node;
+
+            if (!menu.contains(target) && !hamburger.contains(target)) {
+                menu.classList.remove("active");
+            }
+        });
+    }
+    </script>
+
+</nav>

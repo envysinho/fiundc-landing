@@ -1,0 +1,220 @@
+@media (min-width: 768px) {
+    body {
+        background: #f5f5f5;
+    }
+
+    .hero {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        max-width: 1380px; /* 🔥 controla ancho */
+        margin: 30px auto;     /* 🔥 centra */
+        padding: 0 20px;    /* pequeño respiro */
+        gap: 20px;          /* separación entre columnas */
+    }
+
+    .carousel-container {
+        width: 50%;
+        height: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .carousel-track {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .actualidad {
+        width: 50%;
+        height: 100%;
+        overflow-y: none; /* 🔥 scroll si hay mucho contenido */
+    }
+
+    .actualidad-title {
+        display: none;
+    }
+
+     .actualidad-list {
+        gap: 15px;
+    }
+
+     .card {
+        height: 200px; /* 🔥 más alta */
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    .card-content h3 {
+        font-size: 1.3rem;
+        padding: 0 5px;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+
+    .card img {
+        width: 180px;   /* 🔥 más grande */
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .actualidad-btn {
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 1rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .mensaje {
+        max-width: 1380px;
+        margin: 30px auto;   /* centra */
+        padding: 0 20px;     /* aire lateral */
+    }
+
+    .mensaje-container {
+        padding: 30px 30px 30px 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 450px;       /* opcional: más grande en desktop */
+        border-radius: 12px;
+        overflow: hidden;
+        background: rgb(3, 10, 73);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .mensaje-overlay {
+        position: static;       /* 🔥 quitamos overlay */
+        width: 50%;
+        height: 100%;
+        background: rgb(3, 10, 73);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 70px;
+    }
+
+    /* IMAGEN (DERECHA) */
+    .mensaje-container img {
+        width: 48.2%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 38%;
+        background: rgb(3, 10, 73);
+        border-radius: 12px;
+    }
+
+    .mensaje-title {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .mensaje-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .mobile-text {
+        display: none;
+    }
+
+    .desktop-text {
+        display: block;
+    }
+
+    .portales {
+        max-width: 1380px;
+        margin: 50px auto 80px auto;
+        padding: 0 20px;
+    }
+
+    .portales-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .portales-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .portales-card {
+        height: 60px;
+        font-size: 1.1rem;
+        border-radius: 16px;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        transition: 0.1 ease;
+    }
+
+    .portales-card:hover {
+        transform: scale(1.01);
+    }
+
+    .footer-container {
+        max-width: 1380px;
+        margin: 0px auto 0;
+        padding: 40px auto 20px auto;
+    }
+
+    /* INFO EN FILA MÁS LIMPIA */
+    .footer-info {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 80px;
+        text-align: center;
+    }
+
+    .footer-horarios,
+    .footer-contacto {
+        flex: 1;
+        min-width: 260px;
+    }
+
+    .footer h4 {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    /* LOGOS ABAJO CENTRADOS */
+    .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding-top: 20px;
+    }
+
+    .footer-logos {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-logos img {
+        width: 50px;
+    }
+
+    /* COPYRIGHT MÁS PEQUEÑO */
+    .footer-copyright p {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+}

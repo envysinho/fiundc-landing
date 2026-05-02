@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  background: rgb(3, 10, 73);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+/* CONTENEDOR DE HORARIOS + CONTACTO */
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+
+/* cada bloque ocupa espacio igual */
+.footer-horarios,
+.footer-contacto {
+  flex: 1;
+}
+
+/* LOGOS */
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-logos img {
+  width: 40px;
+}
+
+/* TITULOS */
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+/* TEXTOS */
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* COPYRIGHT */
+.footer-copyright {
+  margin-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 15px;
+}
